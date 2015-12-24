@@ -182,6 +182,13 @@
 	return self;
 }
 
+- (id)initWithFrame:(CGRect)frame {
+	return [self initWithScrollView:nil delegate:nil];
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+	return [self initWithScrollView:nil delegate:nil];
+}
 
 #pragma mark - Loading
 
